@@ -1,0 +1,7 @@
+
+
+
+
+def isAuth():
+    print("nice")
+    

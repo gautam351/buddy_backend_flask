@@ -24,6 +24,7 @@ class users(Document):
     def to_json(self):
         
         return dict({
+           "_id": str(self.pk),
             "name":self.name,
             "email":self.email,
             "created_on":self.created_on.strftime("%d-%m-%Y"),
