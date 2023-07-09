@@ -66,6 +66,7 @@ class signup(Resource):
 
 
 class login(Resource):
+    
     def post(self):
         data=request.get_json()
         email=data.get("email")
@@ -94,6 +95,9 @@ class login(Resource):
         return res   
         
     
+# # logout route
+# class logout(Resource):
+#     def get(self):
 
 
 def initializeRoutes(api):
